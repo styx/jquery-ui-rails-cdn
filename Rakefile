@@ -7,7 +7,7 @@ require 'rdoc/task'
 desc 'Generate documentation for the timeline_fu plugin.'
 Rake::RDocTask.new(:rdoc) do |rdoc|
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title    = 'JqueryUI.CDN'
+  rdoc.title    = 'jQuery-ui.cdn'
   rdoc.options << '--line-numbers' << '--inline-source'
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')

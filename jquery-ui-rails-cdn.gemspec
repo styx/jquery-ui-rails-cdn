@@ -1,5 +1,5 @@
 # -*- encoding: utf-8 -*-
-require File.expand_path('../lib/jquery-rails-cdn/version', __FILE__)
+require File.expand_path('../lib/jquery-ui-rails-cdn/version', __FILE__)
 
 Gem::Specification.new do |gem|
   gem.authors       = ["Mikhail Pobolovets"]
@@ -13,7 +13,7 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.name          = "jquery-ui-rails-cdn"
   gem.require_paths = ["lib"]
-  gem.version       = JqueryUI::Rails::Cdn::VERSION
+  gem.version       = Jquery::Ui::Rails::Cdn::VERSION
 
   gem.add_runtime_dependency "jquery-ui-rails"
 end
