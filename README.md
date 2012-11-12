@@ -40,6 +40,12 @@ Add this line to your application's Gemfile:
 gem 'jquery-ui-rails-cdn'
 ```
 
+### WARNING
+
+Currently (`2012.10.12`) and until required patch is not merged, you will need to use forked version of jquery-ui-rails
+* [techbang-jquery-ui-rails](https://github.com/techbang/jquery-ui-rails)
+or any other which defines `Jquery::Ui::Rails::JQUERY_UI_VERSION`.
+
 ## Usage
 
 This gem adds these methods to generate a script tag to the jQuery on a CDN of your preference:
