@@ -42,7 +42,10 @@ gem 'jquery-ui-rails-cdn'
 
 ### WARNING
 
-Currently (`2012.10.12`) and until required patch is not merged, you will need to use forked version of jquery-ui-rails
+From `jquery-ui-rails` `4.1.0` onward, `Jquery::Ui::Rails::JQUERY_UI_VERSION` is defiend and auto updated on each release.
+* [See this commit](https://github.com/joliss/jquery-ui-rails/commit/e22a185)
+
+If you are using version lower than `4.1.0`, you will need to use forked version of jquery-ui-rails
 * [techbang-jquery-ui-rails](https://github.com/techbang/jquery-ui-rails)
 or any other which defines `Jquery::Ui::Rails::JQUERY_UI_VERSION`.
 
