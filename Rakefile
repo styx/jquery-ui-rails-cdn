@@ -1,14 +1,7 @@
-#!/usr/bin/env rake
-require 'rake'
-require 'bundler/setup'
 require 'bundler/gem_tasks'
-require 'rdoc/task'
+require 'rspec/core/rake_task'
 
-desc 'Generate documentation for the timeline_fu plugin.'
-Rake::RDocTask.new(:rdoc) do |rdoc|
-  rdoc.rdoc_dir = 'rdoc'
-  rdoc.title    = 'jQuery-ui.cdn'
-  rdoc.options << '--line-numbers' << '--inline-source'
-  rdoc.rdoc_files.include('README*')
-  rdoc.rdoc_files.include('lib/**/*.rb')
-end
+RSpec::Core::RakeTask.new
+
+task default: :spec
+task test: :spec
