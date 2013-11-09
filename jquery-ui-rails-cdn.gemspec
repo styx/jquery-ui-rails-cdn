@@ -15,6 +15,11 @@ Gem::Specification.new do |gem|
   gem.require_paths = ['lib']
   gem.version       = Jquery::Ui::Rails::Cdn::VERSION
 
+  unless ENV['TRAVIS']
+    gem.signing_key = File.join(Dir.home, '/.gem/trust/gem-private_key.pem')
+    gem.cert_chain = ['gem-public_cert.pem']
+  end
+
   gem.add_runtime_dependency 'jquery-ui-rails', '>= 4.1.0'
 
   gem.add_development_dependency 'bundler', '~> 1.3'
