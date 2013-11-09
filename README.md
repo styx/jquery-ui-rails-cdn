@@ -29,6 +29,7 @@ On top of that, if you're using asset pipeline, you may have noticed that the ma
 
 Changelog:
 
+* v0.1.2: Compatibility fix + various gem spec changes
 * v0.1.1: Readme fix
 * v0.1.0: Initial release
 
