@@ -16,10 +16,10 @@ Gem::Specification.new do |gem|
   gem.version       = Jquery::Ui::Rails::Cdn::VERSION
   gem.license       = 'MIT'
 
-  unless ENV['TRAVIS']
-    gem.signing_key = File.join(Dir.home, '/.gem/trust/gem-private_key.pem')
-    gem.cert_chain = ['gem-public_cert.pem']
-  end
+  # unless ENV['TRAVIS']
+  #   gem.signing_key = File.join(Dir.home, '/.gem/trust/gem-private_key.pem')
+  #   gem.cert_chain = ['gem-public_cert.pem']
+  # end
 
   gem.add_runtime_dependency 'jquery-ui-rails', '>= 4.1.0'
 
