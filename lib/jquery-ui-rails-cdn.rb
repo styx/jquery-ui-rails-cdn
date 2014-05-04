@@ -9,7 +9,7 @@ module Jquery::Ui::Rails::Cdn
     URL = {
       :google     => "//ajax.googleapis.com/ajax/libs/jqueryui/#{JQUERY_UI_VERSION}/jquery-ui.min.js",
       :microsoft  => "//ajax.aspnetcdn.com/ajax/jquery.ui/#{JQUERY_UI_VERSION}/jquery-ui.min.js",
-      :jquery     => "http://code.jquery.com/ui/#{JQUERY_UI_VERSION}/jquery-ui.min.js",
+      :jquery     => "//code.jquery.com/ui/#{JQUERY_UI_VERSION}/jquery-ui.min.js",
       :yandex     => "//yandex.st/jquery-ui/#{JQUERY_UI_VERSION}/jquery-ui.min.js",
       :cloudflare => "//cdnjs.cloudflare.com/ajax/libs/jqueryui/#{JQUERY_UI_VERSION}/jquery-ui.min.js"
     }
