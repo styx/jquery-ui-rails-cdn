@@ -16,8 +16,9 @@ Gem::Specification.new do |gem|
   gem.version       = Jquery::Ui::Rails::Cdn::VERSION
   gem.license       = 'MIT'
 
-  unless ENV['TRAVIS']
-    gem.signing_key = File.join(Dir.home, '/.gem/trust/gem-private_key.pem')
+  signing_key = File.join(Dir.home, '/.gem/trust/gem-private_key.pem')
+  if File.exist? signing_key
+    gem.signing_key = signing_key
     gem.cert_chain = ['gem-public_cert.pem']
   end
 
