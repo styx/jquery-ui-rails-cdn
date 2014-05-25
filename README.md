@@ -29,6 +29,7 @@ On top of that, if you're using asset pipeline, you may have noticed that the ma
 
 Changelog:
 
+* v0.1.4: Stop exposing ```force: true``` to the tag
 * v0.1.3: Various bugfixes
 * v0.1.2: Compatibility fix + various gem spec changes
 * v0.1.1: Readme fix
