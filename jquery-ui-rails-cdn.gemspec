@@ -22,7 +22,7 @@ Gem::Specification.new do |gem|
     gem.cert_chain = ['gem-public_cert.pem']
   end
 
-  gem.add_runtime_dependency 'jquery-ui-rails', '>= 4.1.0'
+  gem.add_runtime_dependency 'jquery-ui-rails', '>= 5.0.0'
 
   gem.add_development_dependency 'bundler', '~> 1.3'
   gem.add_development_dependency 'rake'
