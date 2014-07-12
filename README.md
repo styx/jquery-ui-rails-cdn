@@ -1,5 +1,7 @@
 # jquery-ui-rails-cdn
 
+NOTE: use v0.1.5 to use jquery-ui less then 5.0
+
 Add CDN support to
 
 * [jquery-ui-rails](https://github.com/joliss/jquery-ui-rails).
@@ -29,6 +31,7 @@ On top of that, if you're using asset pipeline, you may have noticed that the ma
 
 Changelog:
 
+* v0.1.5: Lock jquery-ui-rails to < 5.0 due to major changes in jquery-ui
 * v0.1.4: Stop exposing ```force: true``` to the tag
 * v0.1.3: Various bugfixes
 * v0.1.2: Compatibility fix + various gem spec changes
