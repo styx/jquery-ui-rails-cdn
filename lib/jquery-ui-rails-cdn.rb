@@ -19,10 +19,10 @@ module Jquery::Ui::Rails::Cdn
     end
 
     def jquery_ui_include_tag(name, options = {})
-      return javascript_include_tag('jquery.ui.all') if !options.delete(:force) and OFFLINE
+      return javascript_include_tag('jquery-ui') if !options.delete(:force) and OFFLINE
 
       [ javascript_include_tag(jquery_ui_url(name, options)),
-        javascript_tag("window.jQuery.ui || document.write(unescape('#{javascript_include_tag('jquery.ui.all').gsub('<','%3C').gsub("\n",'%0A')}'))")
+        javascript_tag("window.jQuery.ui || document.write(unescape('#{javascript_include_tag('jquery-ui').gsub('<','%3C').gsub("\n",'%0A')}'))")
       ].join("\n").html_safe
     end
   end
